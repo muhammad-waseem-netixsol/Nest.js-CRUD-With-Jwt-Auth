@@ -14,7 +14,7 @@ async function bootstrap() {
   .addTag('contacts')
   .build();
 const document = SwaggerModule.createDocument(app, config);
-SwaggerModule.setup('api', app, document);
+SwaggerModule.setup('https://nest-js-crud-with-jwt-auth.vercel.app/api', app, document);
   await app.listen(3000);
 }
 bootstrap();
